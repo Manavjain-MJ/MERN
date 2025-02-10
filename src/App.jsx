@@ -16,6 +16,8 @@ import { Arraydemo7 } from './components/Arraydemo7'
 import { UseStateDemo1 } from './components/UseStateDemo1'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { InputDemo1 } from './components/InputDemo1'
+import { InputDem2 } from './components/InputDem2'
+import { InputDemo2 } from './components/InputDemo2'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +26,9 @@ function App() {
 
   return (
     <div>
-      <InputDemo1></InputDemo1>
+      <InputDem2></InputDem2>
+      <InputDemo2></InputDemo2>
+      {/* <InputDemo1></InputDemo1> */}
       {/* <UseStateDemo2></UseStateDemo2> */}
       {/* <UseStateDemo1></UseStateDemo1> */}
       {/* <Arraydemo5></Arraydemo5>
