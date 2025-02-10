@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    gap: 0;
+}
+.bg{
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}   
+
+.navbar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.list{
+    display: flex;
+    text-align: end;
+    list-style: none;
+    gap: 90px;
+}

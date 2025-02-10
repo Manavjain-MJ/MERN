@@ -1,0 +1,40 @@
+.footer{
+    bottom: 0%;
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 100%;
+}
+.abt{
+    color: white;
+}
+
+.about{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* top: 90px; */
+    margin-left: 350px;
+    margin-top: 100px;
+    color: black;
+    background-color: #fff;
+}
+
+
+.space{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    margin-right: 250px;
+    margin-top: 100px;
+    height: 400px;
+    width: 350px;
+    border-color: black;
+    border-radius: 8px;
+}
