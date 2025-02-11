@@ -18,6 +18,11 @@ import { UseStateDemo2 } from './components/UseStateDemo2'
 import { InputDemo1 } from './components/InputDemo1'
 import { InputDem2 } from './components/InputDem2'
 import { InputDemo2 } from './components/InputDemo2'
+import { Route, Routes } from 'react-router-dom'
+import { HotstarHome } from './components/hotstar/HotstarHome'
+import { HotstarMovies } from './components/hotstar/HotstarMovies'
+import { HotstarWelcome } from './components/hotstar/HotstarWelcome'
+import { Error404 } from './components/hotstar/Error404'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,24 +31,13 @@ function App() {
 
   return (
     <div>
-      <InputDem2></InputDem2>
-      <InputDemo2></InputDemo2>
-      {/* <InputDemo1></InputDemo1> */}
-      {/* <UseStateDemo2></UseStateDemo2> */}
-      {/* <UseStateDemo1></UseStateDemo1> */}
-      {/* <Arraydemo5></Arraydemo5>
-      <Arraydemo6></Arraydemo6>
-      <Arraydemo7></Arraydemo7> */}
-      {/* <Arraydemo4></Arraydemo4> */}
-      {/* <Arraydemo3></Arraydemo3> */}
-      {/* <Arraydemo1></Arraydemo1>
-      <Arraydemo2></Arraydemo2> */}
-      {/* <Navbar></Navbar> 
-       <Footer></Footer> */}
-
-        {/* <Header></Header><br></br><br></br>
-      <Content></Content>
-       */}
+     <Navbar></Navbar>
+     <Routes>
+      <Route path='/' element = {<HotstarWelcome></HotstarWelcome>}></Route>
+      <Route path='/home' element = {<HotstarHome></HotstarHome>}></Route>
+      <Route path='/movies' element = {<HotstarMovies></HotstarMovies>}></Route>
+      <Route path='/*' element={<Error404></Error404>}></Route>
+     </Routes>
     </div>
   )
 }
