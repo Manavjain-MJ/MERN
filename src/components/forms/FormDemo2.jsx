@@ -26,7 +26,7 @@ export const FormDemo2 = () => {
                     Return<input type="checkbox" value="return" {...register("choice")} />
                     <br />
                     <label>City</label>
-                    <select>
+                    <select {...register("city")}>
                         <option value="ahmedabad">Ahmedabad</option>
                         <option value="mumbai">Mumbai</option>
                         <option value="pune">Pune</option>
