@@ -3,10 +3,32 @@ import { useForm } from 'react-hook-form'
 
 export const FormDemo1 = () => {
 
-  const {register,handleSubmit} = useForm()
+  const {register,handleSubmit,formState:{errors}} = useForm()
   const submitHandler =(data) => {
     console.log(data)
   }
+
+    const validationschema={
+      namevalidator:{
+          required:{
+            value:true,
+            message:"Name is required"
+          }
+      },
+      agevalidator:{
+        required:{
+          value:true,
+          message:"Age is required"
+        }
+      },
+      budgetvalidator:{
+        required:{
+          value:true,
+          message:"Budget is requried"
+        }
+      }
+    }
+
 
   return (
     <div style={{textAlign:"center"}}>
@@ -14,11 +36,14 @@ export const FormDemo1 = () => {
         <form onSubmit={handleSubmit(submitHandler)}>
         <div>
           <label>Name</label>
-          <input type="text" placeholder='enter name' {...register("name")}/>
+          <input type="text" placeholder='enter name' {...register("name",validationschema.namevalidator)}/>
+          <span style={{color:"red"}}>{errors.name?.message}</span>
           <label>AGE</label>
-          <input type="number" placeholder='enter number' {...register("number")}/>
+          <input type="number" placeholder='enter number' {...register("number",validationschema.agevalidator)}/>
+          <span style={{color:"red"}}>{errors.number?.message}</span>
           <label>BUDGET</label>
-          <input type="number" placeholder='enter budget' {...register("budget")}/>
+          <input type="number" placeholder='enter budget' {...register("budget",validationschema.budgetvalidator)}/>
+          <span style={{color:"red"}}>{errors.budget?.message}</span>
           <br />
           <input type="submit" />
         </div>
