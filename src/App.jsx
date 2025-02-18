@@ -34,6 +34,9 @@ import { FormDemo7 } from './components/forms/FormDemo7'
 import { FormDemo8 } from './components/forms/FormDemo8'
 import { FormDemo9 } from './components/forms/FormDemo9'
 import { FormDemo10 } from './components/forms/FormDemo10'
+import { Apidemo1 } from './components/api/Apidemo1'
+import { MovieSearch } from './components/ombd/MovieSearch'
+import { MovieDetail } from './components/ombd/MovieDetail'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -46,7 +49,7 @@ function App() {
      <Routes>
       <Route path='/' element = {<HotstarWelcome></HotstarWelcome>}></Route>
       <Route path='/home' element = {<HotstarHome></HotstarHome>}></Route>
-      <Route path='/movies' element = {<HotstarMovies></HotstarMovies>}></Route>
+      {/* <Route path='/movies' element = {<HotstarMovies></HotstarMovies>}></Route>
       <Route path='/play/:id' element= {<Play></Play>}></Route>
       <Route path='/formdemo1' element ={<FormDemo1></FormDemo1>}></Route>
       <Route path='/formdemo2' element ={<FormDemo2></FormDemo2>}></Route>
@@ -57,9 +60,12 @@ function App() {
       <Route path='/formdemo7' element ={<FormDemo7 ></FormDemo7>}></Route>
       <Route path='/formdemo8' element ={<FormDemo8 ></FormDemo8>}></Route>
       <Route path='/formdemo9' element ={<FormDemo9 ></FormDemo9>}></Route>
-      <Route path='/formdemo10' element ={<FormDemo10 ></FormDemo10>}></Route>
+      <Route path='/formdemo10' element ={<FormDemo10 ></FormDemo10>}></Route> */}
       <Route path='/*' element={<Error404></Error404>}></Route>
+      <Route path='/moviesearch' element ={<MovieSearch ></MovieSearch>}></Route>
+      <Route path='/moviedetail/:id' element ={<MovieDetail ></MovieDetail>}></Route>
      </Routes>
+     {/* <Apidemo1></Apidemo1> */}
     </div>
   )
 }
