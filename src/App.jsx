@@ -37,7 +37,6 @@ import { FormDemo10 } from './components/forms/FormDemo10'
 import { Apidemo1 } from './components/api/Apidemo1'
 import { MovieSearch } from './components/ombd/MovieSearch'
 import { MovieDetail } from './components/ombd/MovieDetail'
-
 function App() {
   const [count, setCount] = useState(0)
 
@@ -63,6 +62,7 @@ function App() {
       <Route path='/formdemo10' element ={<FormDemo10 ></FormDemo10>}></Route> */}
       <Route path='/*' element={<Error404></Error404>}></Route>
       <Route path='/moviesearch' element ={<MovieSearch ></MovieSearch>}></Route>
+      {/* <Route path='/moviecatalog' element ={<MovieCatalog ></MovieCatalog>}></Route> */}
       <Route path='/moviedetail/:id' element ={<MovieDetail ></MovieDetail>}></Route>
      </Routes>
      {/* <Apidemo1></Apidemo1> */}
