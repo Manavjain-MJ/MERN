@@ -50,6 +50,15 @@ export const Navbar = () => {
                      <li class="nav-item">
                         <Link class="nav-link" to="/moviesearch">Movie-Search</Link>
                     </li>
+                     <li class="nav-item">
+                        <Link class="nav-link" to="/postapidemo1">PostApiDemo1</Link>
+                    </li>
+                     <li class="nav-item">
+                        <Link class="nav-link" to="/postapidemo">PostApiDemo</Link>
+                    </li>
+                     <li class="nav-item">
+                        <Link class="nav-link" to="/apidemo1">ApiDemo1</Link>
+                    </li>
                 </ul>
             </div>
         </nav>

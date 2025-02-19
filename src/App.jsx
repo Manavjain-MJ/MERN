@@ -37,6 +37,8 @@ import { FormDemo10 } from './components/forms/FormDemo10'
 import { Apidemo1 } from './components/api/Apidemo1'
 import { MovieSearch } from './components/ombd/MovieSearch'
 import { MovieDetail } from './components/ombd/MovieDetail'
+import { PostApiDemo1 } from './components/api/PostApiDemo1'
+import { PostApiDemo } from './components/api/PostApiDemo'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -64,8 +66,10 @@ function App() {
       <Route path='/moviesearch' element ={<MovieSearch ></MovieSearch>}></Route>
       {/* <Route path='/moviecatalog' element ={<MovieCatalog ></MovieCatalog>}></Route> */}
       <Route path='/moviedetail/:id' element ={<MovieDetail ></MovieDetail>}></Route>
+      <Route path='/postapidemo1' element ={<PostApiDemo1 />}></Route>
+      <Route path='/postapidemo' element ={<PostApiDemo />}></Route>
+      <Route path='/apidemo1' element ={<Apidemo1 />}></Route>
      </Routes>
-     {/* <Apidemo1></Apidemo1> */}
     </div>
   )
 }

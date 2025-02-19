@@ -1,7 +1,7 @@
 
 .main{
     /* background-color: burlywood; */
-    background: linear-gradient(to top, rgba(248, 245, 68, 0.595), rgb(252, 240, 224));
+    background: linear-gradient(to top, rgba(77, 76, 38, 0.595), rgb(252, 240, 224));
 
 
 }
@@ -10,14 +10,31 @@
 }
 .title{
     margin-top: 50px;
+    font-size: 80px;
 }
 .font{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: black
 }
-.poster{
-    height: 380px;
-}
 .time{
-    /* margin-bottom:  */
+    display: flex;
+    gap: 70px;
+}
+.genre{
+    border:2px solid black;
+    width: fit-content;
+    border-radius: 25px;
+    padding: 3px 10px;
+}
+.poster{
+    /* height: 380px; */
+}
+
+img{
+    margin-top: 0px;
+    margin: 20px 0px;
+}
+.detail{
+    border-bottom: 1px solid white;
+    width: 75%;
 }
